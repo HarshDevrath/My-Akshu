@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>50 Reasons Why I Like My Akshu ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("photo1.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero p{
+margin-top:10px;
+font-size:1.2rem;
+}
+
+.section{
+padding:50px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.reason{
+background:rgba(255,255,255,.08);
+padding:15px;
+margin:12px 0;
+border-radius:15px;
+backdrop-filter:blur(10px);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+}
+
+button{
+padding:15px 25px;
+border:none;
+border-radius:30px;
+background:#ff4d8d;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+.popup{
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+color:black;
+padding:30px;
+border-radius:20px;
+width:90%;
+max-width:500px;
+text-align:center;
+z-index:999;
+}
+
+.hearts{
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+}
+
+.heart{
+position:absolute;
+color:red;
+font-size:20px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+100%{
+transform:translateY(-100px);
+opacity:1;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<section class="hero">
+<div>
+<h1>🌸 My Akshu 🌸</h1>
+<p>50 Reasons Why I Like You ❤️</p>
+</div>
+</section>
+
+<section class="section">
+
+<h2>❤️ 50 Reasons Why I Like My Akshu ❤️</h2>
+
+<div class="reason">1. Your smile makes my day better.</div>
+<div class="reason">2. You understand me.</div>
+<div class="reason">3. You care for me.</div>
+<div class="reason">4. Your eyes are beautiful.</div>
+<div class="reason">5. You make me feel lucky.</div>
+<div class="reason">6. Your voice calms me.</div>
+<div class="reason">7. You support me.</div>
+<div class="reason">8. You are adorable.</div>
+<div class="reason">9. You make me laugh.</div>
+<div class="reason">10. You're my comfort place.</div>
+<div class="reason">11. You motivate me.</div>
+<div class="reason">12. You remember little things.</div>
+<div class="reason">13. You make ordinary moments special.</div>
+<div class="reason">14. You're beautiful without trying.</div>
+<div class="reason">15. Your kindness.</div>
+<div class="reason">16. Your honesty.</div>
+<div class="reason">17. Your innocence.</div>
+<div class="reason">18. Your confidence.</div>
+<div class="reason">19. You believe in me.</div>
+<div class="reason">20. You're my favorite notification.</div>
+<div class="reason">21. Your random messages.</div>
+<div class="reason">22. Your cute anger.</div>
+<div class="reason">23. Your silly moments.</div>
+<div class="reason">24. Your laugh.</div>
+<div class="reason">25. You make me smile.</div>
+<div class="reason">26. You stay in my thoughts.</div>
+<div class="reason">27. You make life colorful.</div>
+<div class="reason">28. You're special.</div>
+<div class="reason">29. You're unique.</div>
+<div class="reason">30. You're my safe place.</div>
+<div class="reason">31. You're my happiness.</div>
+<div class="reason">32. You're my peace.</div>
+<div class="reason">33. You're my home.</div>
+<div class="reason">34. You make me feel loved.</div>
+<div class="reason">35. We share memories.</div>
+<div class="reason">36. We share dreams.</div>
+<div class="reason">37. You're worth every effort.</div>
+<div class="reason">38. You're worth every wait.</div>
+<div class="reason">39. You make me better.</div>
+<div class="reason">40. You're unforgettable.</div>
+<div class="reason">41. You're precious.</div>
+<div class="reason">42. You're my favorite chapter.</div>
+<div class="reason">43. You're my best friend.</div>
+<div class="reason">44. You're my person.</div>
+<div class="reason">45. You make my heart happy.</div>
+<div class="reason">46. Your smile is priceless.</div>
+<div class="reason">47. Every memory with you matters.</div>
+<div class="reason">48. I feel lucky to have you.</div>
+<div class="reason">49. I choose you everyday.</div>
+<div class="reason">50. Because you're MY AKSHU ❤️</div>
+
+</section>
+
+<section class="section">
+
+<h2>📸 Our Memories</h2>
+
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+</div>
+
+</section>
+
+<section class="section" style="text-align:center">
+
+<button onclick="showLove()">
+❤️ Click Here If You Doubt My Love ❤️
+</button>
+
+</section>
+
+<div class="popup" id="popup">
+<h2>For My Akshu ❤️</h2>
+<p>
+No matter how many arguments,
+mood swings,
+or difficult days come...
+
+You'll always be my favorite person.
+
+I don't want a perfect story,
+I just want you.
+
+❤️
+</p>
+
+<br>
+
+<h3>From Harsh, to My Akshu ❤️</h3>
+
+</div>
+
+<script>
+
+function showLove(){
+document.getElementById('popup').style.display='block';
+}
+
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"%";
+heart.style.fontSize=(20+Math.random()*30)+"px";
+document.getElementById("hearts").appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+
+},300);
+
+</script>
+
+</body>
+</html>
